@@ -1,0 +1,7 @@
+#local_path = '/home/roma/Coding/auto_update_utm'
+local_path = '/home/raipo'
+ftp_host = '192.168.25.33'
+ftp_login = 'utm'
+ftp_password = 'utm'
+ftp_folder = 'update_utm'
+url_telegramm = 'https://api.telegram.org/bot2096031589:AAEPr6M63hsNytLC1S50JsNbGCLiGH6ZYDU/sendMessage?chat_id=311391844&parse_mode=html&text='

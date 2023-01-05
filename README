@@ -1,0 +1,14 @@
+Необходимо перед запуском
+apt update && apt install pip -y & pip install requests && pip install lxml && pip install bs4 && chmod +x ./update_utm.py
+также нужен ФПТ сервер (продублировать и на фтп и в локальной папке)
+в папке с основным скриптом создать файл ftp_config_raipo.py
+Такого вида:
+local_path = '/home/raipo' #путь где находится скрипт
+ftp_host = '192.168.1.33' #адрес фтп
+ftp_login = 'utm12345' #логин фтп
+ftp_password = 'utm12345' #пароль фтп
+ftp_folder = 'pikachu/betmen/123' #путь до папки с которой нужно все скачивать (пакет утм, обновление скрипта)
+url_telegramm = https://api.telegram.org/bot209634589:AAEPr6M63344550JsNbGCLiGH6ZYDU/sendMessage?chat_id=311391144&parse_mode=html&text=
+также на фтп должен быть файл version_new
+в первой строке должно быть указанно yes или no
+пакет с дистрибутивом назвать utm.deb положить на фтп
